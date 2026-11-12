@@ -1,0 +1,80 @@
+{
+  "completed": true,
+  "image": "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/dataset-a/test_dataset/Fire-and-Smoke-Detection-Dataset/Fire-and-Smoke-Detection-Dataset/dataset/test/images/Frame_No1914_video_15_jpg.rf.955748aaf3d3b29c43a3d5ccb23d32ce.jpg",
+  "image_sha256": "466a1fe1d8865a116821f7a750b4ef9f8eb46b1ecdd16ba719a332d58a3f534f",
+  "labels_sha256": "4babff29e47e1689d4406b609a2644ce3c28f4184c0a6c6b146617a29c017746",
+  "window": 200,
+  "stride": 200,
+  "window_count": 60,
+  "methods": [
+    "mean_fill",
+    "blur"
+  ],
+  "fill_rgb": [
+    130,
+    126,
+    127
+  ],
+  "blur_radius": 30,
+  "reporting_confidence": 0.05,
+  "inference_confidence": 0.01,
+  "tracking_iou": 0.5,
+  "device": "cpu",
+  "references": {
+    "YOLO11n": [
+      {
+        "reference_id": 0,
+        "box": [
+          3.421234130859375,
+          9.41546630859375,
+          937.1726684570312,
+          673.752685546875
+        ],
+        "confidence": 0.16130439937114716,
+        "fire_matched": false
+      }
+    ],
+    "Faster_R_CNN": [
+      {
+        "reference_id": 0,
+        "box": [
+          867.2689208984375,
+          350.8930969238281,
+          994.3810424804688,
+          585.1718139648438
+        ],
+        "confidence": 0.11162950098514557,
+        "fire_matched": true
+      },
+      {
+        "reference_id": 1,
+        "box": [
+          58.383548736572266,
+          48.12264633178711,
+          1001.7442016601562,
+          691.7975463867188
+        ],
+        "confidence": 0.9819850325584412,
+        "fire_matched": false
+      }
+    ]
+  },
+  "checkpoints": {
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/dataset-b/model_training/yolo11n/runs/detect/runs/yolo11n_custom_aug/weights/best.pt": "d82bd1a3abf59f14eae69b25d5ffcea3da879ec332d6460f99e6b1a01c957592",
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/dataset-b/model_training/faster_rcnn/runs/faster_rcnn_loss_check/best_model.pth": "d250cb6477ea2fb9331cca25852749b0cd7bdd4c12a4c2ba06421b58f740ef0f"
+  },
+  "sources": {
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/dataset-b/model_training/yolo11n/evaluate_unseen_fire_yolo.py": "7abf072504d9da4d3fcd0a09670400eb1e34240973c671bd01b3c73f1691999d",
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/dataset-b/model_training/faster_rcnn/train.py": "1374055ea30dec04658e25049edda8820bc109915db8052b5143674fd5859626",
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/dataset-b/model_training/faster_rcnn/evaluate_unseen_fire_faster_rcnn.py": "09985abba97f0579c397930b72027a2faebc81e3e7cf5b6b767691e09e57fae6",
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/run_sliding_occlusion.py": "e55af67744658d92c3e45bf54dd85db5643663cd8f52ef39ee3783401b5660c6",
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/export_xai_predictions.py": "021ca6e8a6dc558fad05818adc2e11faf181c1defe3b79586d50ca01b1f8573a",
+    "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/run_occlusion_pilot.py": "78ebbac6ee59f9ae45331a7f3250af01128f397af96ab626cab146b7aebf8810"
+  },
+  "versions": {
+    "torch": "2.11.0",
+    "torchvision": "0.26.0",
+    "ultralytics": "8.4.48"
+  },
+  "interpretation": "Window sensitivity for selected original boxes. Missing matches are separate from score changes. Maps average covering windows and describe one post-selected image."
+}

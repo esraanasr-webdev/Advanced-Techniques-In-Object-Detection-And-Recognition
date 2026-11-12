@@ -1,0 +1,12 @@
+{
+  "completed": true,
+  "manifest": "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/xai_validation/20261111_101458_cwau3tb4/validation_manifest.csv",
+  "manifest_sha256": "c6f56734f17a31dda5ea3ce5d7473ef866ea0b68bff1d6b31c84eda622e08b11",
+  "baseline_export": "/home/esraa/Public/AIN7015/1st/advancedTechniques/project_code/xai_exports/20261111_090800_6siaomz1",
+  "sample_size": 12,
+  "confidence": 0.05,
+  "iou": 0.5,
+  "inference": "Cached predictions only; no inference or training performed.",
+  "review": "Potential annotation omissions and repeated events require visual/source review. Zero supplied fire boxes does not establish absence of visible flame.",
+  "matching": "Fire and smoke overlaps are independent tasks; the same prediction can match in both. Do not sum these TP counts."
+}

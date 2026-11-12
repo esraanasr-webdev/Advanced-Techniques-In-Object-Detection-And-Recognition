@@ -1,0 +1,15 @@
+variant,model,predictions_at_005,fire_tp
+original,YOLO11n,1,0
+original,Faster_R_CNN,2,1
+smoke_patch_mean_fill,YOLO11n,2,0
+smoke_patch_mean_fill,Faster_R_CNN,2,1
+smoke_patch_blur,YOLO11n,2,0
+smoke_patch_blur,Faster_R_CNN,3,1
+flame_patch_mean_fill,YOLO11n,5,0
+flame_patch_mean_fill,Faster_R_CNN,1,0
+flame_patch_blur,YOLO11n,1,0
+flame_patch_blur,Faster_R_CNN,1,0
+background_patch_mean_fill,YOLO11n,2,0
+background_patch_mean_fill,Faster_R_CNN,2,1
+background_patch_blur,YOLO11n,1,0
+background_patch_blur,Faster_R_CNN,2,1

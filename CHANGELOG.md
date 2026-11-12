@@ -92,7 +92,7 @@ This project was built collaboratively through distinct modular division of arch
 ### 3. Zero-Shot Fire Transfer Under Relaxed Localization ($\text{IoU} \ge 0.10$)
 
 | Model | Conf Threshold | Predictions | True Positives | False Positives | False Negatives | Precision | Recall | F1 Score | Image Det Rate |
-| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---:cross | :---: | :---: | :---: |
 | **RT-DETR** | 0.50 | 482 | 62 | 420 | 933 | 12.86% | 6.23% | 8.40% | 13.07% (60/459) |
 | **RT-DETR** | 0.10 | 3,600 | 131 | 3,469 | 864 | 3.64% | 13.17% | 5.70% | 25.27% (116/459) |
 | **RT-DETR** | 0.05 | 12,942 | 188 | 12,754 | 807 | 1.45% | 18.89% | 2.70% | 33.33% (153/459) |

@@ -1,0 +1,5 @@
+model,reference_id,original_score,png_score,score_change,box_iou,max_coordinate_change_pixels,within_tolerance
+YOLO11n,0,0.16130439937114716,0.16130439937114716,0.0,1.0,0.0,True
+YOLO11n,1,0.04843595623970032,0.04843595623970032,0.0,1.0,0.0,True
+Faster_R_CNN,0,0.9819850325584412,0.9819850325584412,0.0,1.0,0.0,True
+Faster_R_CNN,1,0.11162950098514557,0.11162950098514557,0.0,1.0,0.0,True
